@@ -10,6 +10,7 @@ There are multiple scopes that can be selected for job sharing:
 - combination of vendors and circles
 
 Your task is to buld a React component that will allow the user to define the sharing settings for a job.
+Please focus on building the functionality. Tests are not required and the designs don't need to be pixel-perfect.
 
 You will need to use the following API endpoints to fetch the data:
 - https://mock.hellogustav.com/vendors - returns a list of all available vendors; every vendor has a name and id
@@ -22,7 +23,6 @@ The changes should be submitted to the following endpoint:
   {
     global: false,
     internal: false,
-    all_vendors: false,
     vendors: ["uwqqN4qMJ4RAx6WLyEBGAe", "NeZNQJxeMkCHCpiPK2XpDA"],
     circles: ["PadPa7JHRILRDMxYfGexZp"]
   }
@@ -46,11 +46,9 @@ One the `Select vendors` tab, the logic should be as follows:
 - left columns displays the "All vendor partners" item and a list of circles below it
 - selecting "All vendor partners" loads a list of all vendors (from the /vendors endpoint) in the middle column
   - ticking the checkbox next to a vendor's name adds them to a list of individual vendors
-  - clicking on the "Select all your vendor partners" sets the `all_vendors` flag to true and greys out all the vendors on the list
 - selecting a circle on in the left column loads a list of vendors who belong to that circle into the middle column
   - ticking the checkbox next to a vendor's name adds them to a list of individual vendors
   - clicking on the "Select entire circle" adds its id to the `circles` list
-  - clicking on the "Select all individually" link adds all vendors from the circle to the `vendors` list
 - right columns shows the summary
 
 
