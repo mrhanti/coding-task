@@ -28,9 +28,14 @@ The changes should be submitted to the following endpoint:
   }
   ```
 
-For rendering icons, you can use the `Icon` component, which accepts two props:
-- `color` (string)
-- `icon` (one of the following: ['globe', 'vendors', 'cicle', 'internal', 'clock', 'warning'])
+You can use following components:
+- `Icon`, which accepts two props:
+  - `color` (string)
+  - `icon` (one of the following: ['globe', 'vendors', 'cicle', 'internal', 'clock', 'warning'])
+- `InfoBox`, which requires you to pass:
+  - `text` (string)
+  - `icon` (one of the following: ['globe', 'vendors', 'cicle', 'internal', 'clock', 'warning'])
+- `Toggle`, for selecting the sharing scope (example of its usage can be found in the `App` component)
 
 Selecting `Global` or `Internal` scope should set appropriate flag to `true` and both lists (`vendors` and `circles`) should be empty.
 

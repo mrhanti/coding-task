@@ -13,26 +13,81 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.InfoBox {
   display: flex;
-  flex-direction: column;
+  padding: 14px 14px 12px;
+  border: 1px solid #eceef1;
+  border-radius: 3px;
+  font-size: 14px;
+  background-color: #e8f1f2;
+}
+
+.InfoBox-icon {
+  width: 20px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.Logo {
+  box-sizing: border-box;
+  border-radius: 1px;
+  border: solid 1px #d7e2e8;
+  color: white;
+  text-align: center;
+}
+
+.Logo--large {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  padding-top: 2px;
+}
+
+.Logo--small {
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+  padding-top: 1px;
+}
+
+.Toggle {
+  display: flex;
+  height: 30px;
+  width: 100%;
+}
+
+.ToggleOption {
+  display: inline-flex;
+  flex-grow: 1;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border: solid 1px #d7e2e8;
+  background-color: white;
+  text-align: center;
+  font-size: 16px;
+  color: #bac2cb;
+  outline: none;
+  margin: 0px -1px;
+  cursor: pointer;
+}
+.ToggleOption:first-child {
+  border-radius: 3px 0 0 3px;
+  margin: 0;
+}
+.ToggleOption:last-child {
+  border-radius: 0 3px 3px 0;
+  margin: 0;
+}
+
+.ToggleOption--active {
+  background-color: #0aafc4;
+  border-color: #0aafc4;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ToggleOption-icon {
+  width: 16px;
+  height: 16px; width: 16px;
+  height: 16px;
+  margin-right: 8px;
 }
