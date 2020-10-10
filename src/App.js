@@ -16,8 +16,18 @@ function App() {
 
   return (
     <div className="App">
+      Components overview (remove when not needed):
+      <br />
+      <br />
       <Toggle options={toggleOptions} active={scope} onChange={setScope} />
-      PLACE FOR YOUR COMPONENT
+      <br />
+      <div style={{ width: '32px' }}><Icon icon="clock" color="green" /></div>
+      <br />
+      <Logo name="Company" size="large" />
+      <Logo name="Another company" size="small" />
+      <br />
+      <InfoBox text="Attention, attention! This is a box containing important warning" icon="warning" />
+      <br />
     </div>
   );
 }

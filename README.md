@@ -32,6 +32,9 @@ You can use following components:
 - `Icon`, which accepts two props:
   - `color` (string)
   - `icon` (one of the following: ['globe', 'vendors', 'cicle', 'internal', 'clock', 'warning'])
+- `Logo`, which accepts two props:
+  - `name` (string) - the name of a company
+  - `size` (one of the following: ['large', 'small'])
 - `InfoBox`, which requires you to pass:
   - `text` (string)
   - `icon` (one of the following: ['globe', 'vendors', 'cicle', 'internal', 'clock', 'warning'])
